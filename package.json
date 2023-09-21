@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "test": "mocha --no-timeouts **/*.test.js"
+  },
+
   "dependencies": {
     "chai": "^4.3.8",
     "mocha": "^10.2.0",
