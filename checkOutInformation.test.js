@@ -23,15 +23,8 @@ describe('Check Out Information', function () {
         checkOutPage = new CheckOutPage(driver)
         checkOutOverviewPage = new CheckOutOverviewPage(driver)
 	})
-    
-    // beforeEach(async function(){
-    //     await loginPage.openPage()
-    //     await loginPage.loginProcess('standard_user', 'secret_sauce')
-    //     await inventoryPage.openPage()
-    //     await inventoryPage.addToCart()
-    // })
 
-    it('Mencoba dengan data yang valid', async function () {
+    it('Mencoba dengan data yang valid - Positive Test', async function () {
         await loginPage.openPage()
         await loginPage.loginProcess('standard_user', 'secret_sauce')
         await inventoryPage.openPage()
@@ -49,21 +42,21 @@ describe('Check Out Information', function () {
         expect(total).to.include('32.39')
     })
 
-    it('Mencoba dengan tidak mengisi first name', async function () {
+    it('Mencoba dengan tidak mengisi first name - Negative Test', async function () {
         await checkOutPage.openPage()
         await checkOutPage.inputBuyerInformation('', 'Ikbal', '61222')
         
         const errorMessage = await checkOutPage.getErrorMessage()
         expect(errorMessage).to.include('First Name is required')
     })
-    it('Mencoba dengan tidak mengisi last name', async function () {
+    it('Mencoba dengan tidak mengisi last name - Negative Test', async function () {
         await checkOutPage.openPage()
         await checkOutPage.inputBuyerInformation('Faris', '', '61222')
         
         const errorMessage = await checkOutPage.getErrorMessage()
         expect(errorMessage).to.include('Last Name is required')
     })
-    it('Mencoba dengan tidak mengisi postal code', async function () {
+    it('Mencoba dengan tidak mengisi postal code - Negative Test', async function () {
         await checkOutPage.openPage()
         await checkOutPage.inputBuyerInformation('Faris', 'Ikbal', '')
         

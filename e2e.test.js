@@ -7,7 +7,7 @@ const CartPage = require('./pageobjects/CartPage')
 const CheckOutPage = require('./pageobjects/CheckOutPage')
 const CheckOutOverviewPage = require('./pageobjects/CheckOutOverviewPage')
 
-describe('Check Out Information', function () {
+describe('End to end test', function () {
 	/** @type {WebDriver} */ let driver
     /** @type {cartPage} */ let cartPage
     /** @type {LoginPage} */ let loginPage
