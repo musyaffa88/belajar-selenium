@@ -29,7 +29,10 @@ describe('End to end test', function () {
         await loginPage.loginProcess('standard_user', 'secret_sauce')
         await inventoryPage.openPage()
         await inventoryPage.addToCart()
+        const message = await cartPage.getProductName()
+        expect(message).to.include('Sauce Labs Backpack')
         await cartPage.checkout()
+        
         await checkOutPage.inputBuyerInformation('Faris', 'Ikbal', '61222')
 
         const productName = await checkOutOverviewPage.getProductName()
