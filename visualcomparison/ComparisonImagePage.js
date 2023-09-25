@@ -37,6 +37,7 @@ class ComparisonPage extends VisualPage {
 			expect(pageScreenshotBuffer).to.matchImage(baseScreenshotBuffer)
 		} else {
 			writeFileSync(baseScreenshotPath, pageScreenshotBuffer)
+			console.log('Gambar Base Baru Ditambahkan');
 		}
 	}
 

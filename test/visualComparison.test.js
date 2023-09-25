@@ -14,31 +14,31 @@ describe('Visual Test', function () {
 
     it('Visual Testing halaman www.chaijs.com ', async function () {
         await comparisonImagePage.openPage('https://www.chaijs.com/')
-        await new Promise(done => setTimeout(done, 2000))
+        await new Promise(done => setTimeout(done, 500))
         await comparisonImagePage.ComparisonProcess('Chai')
     })
 
     it('Visual Testing halaman www.chaijs.com/guide/ ', async function () {
         await comparisonImagePage.openPage('https://www.chaijs.com/guide/')
-        await new Promise(done => setTimeout(done, 2000))
+        await new Promise(done => setTimeout(done, 500))
         await comparisonImagePage.ComparisonProcess('Guide')
     })
 
     it('Visual Testing halaman www.chaijs.com/api/ ', async function () {
         await comparisonImagePage.openPage('https://www.chaijs.com/api/')
-        await new Promise(done => setTimeout(done, 2000))
+        await new Promise(done => setTimeout(done, 500))
         await comparisonImagePage.ComparisonProcess('API')
     })
 
     it('Visual Testing halaman www.chaijs.com/plugins/ ', async function () {
         await comparisonImagePage.openPage('https://www.chaijs.com/plugins/')
-        await new Promise(done => setTimeout(done, 2000))
+        await new Promise(done => setTimeout(done, 500))
         await comparisonImagePage.ComparisonProcess('Plugins')
     })
 
     it('Visual Testing halaman www.selenium.dev ', async function () {
         await comparisonImagePage.openPage('https://www.selenium.dev/')
-        await new Promise(done => setTimeout(done, 2000))
+        await new Promise(done => setTimeout(done, 500))
         await comparisonImagePage.ComparisonProcess('Selenium')
     })
 
