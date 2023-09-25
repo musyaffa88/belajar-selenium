@@ -6,9 +6,9 @@ const { chaiImage } = require('chai-image')
 
 chai.use(chaiImage)
 const { expect } = chai
-const PageComparison = require('./PageComparison')
+const VisualPage = require('./VisualPage')
 
-class ComparisonPage extends PageComparison {
+class ComparisonPage extends VisualPage {
 	constructor (driver) {
 		super(driver)
 	}
