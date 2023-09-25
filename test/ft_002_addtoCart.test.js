@@ -1,8 +1,8 @@
 const { By, WebDriver } = require('selenium-webdriver')
 const { expect } = require('chai')
-const setupDriver = require('./utils/setupDriver')
-const InventoryPage = require('./pageobjects/InventoryPage')
-const CartPage = require('./pageobjects/CartPage')
+const setupDriver = require('../utils/setupDriver')
+const InventoryPage = require('../pageobjects/InventoryPage')
+const CartPage = require('../pageobjects/CartPage')
 
 describe('Add Product to Cart', function () {
 	/** @type {WebDriver} */ let driver

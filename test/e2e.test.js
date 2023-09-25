@@ -1,11 +1,11 @@
 const { By, WebDriver, until } = require('selenium-webdriver')
 const { expect } = require('chai')
-const setupDriver = require('./utils/setupDriver')
-const LoginPage = require('./pageobjects/LoginPage')
-const InventoryPage = require('./pageobjects/InventoryPage')
-const CartPage = require('./pageobjects/CartPage')
-const CheckOutPage = require('./pageobjects/CheckOutPage')
-const CheckOutOverviewPage = require('./pageobjects/CheckOutOverviewPage')
+const setupDriver = require('../utils/setupDriver')
+const LoginPage = require('../pageobjects/LoginPage')
+const InventoryPage = require('../pageobjects/InventoryPage')
+const CartPage = require('../pageobjects/CartPage')
+const CheckOutPage = require('../pageobjects/CheckOutPage')
+const CheckOutOverviewPage = require('../pageobjects/CheckOutOverviewPage')
 
 describe('End to end test', function () {
 	/** @type {WebDriver} */ let driver
