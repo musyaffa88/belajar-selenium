@@ -8,6 +8,7 @@ class InventoryPage extends Page {
 	}
 
 	pageTitleEl = By.css('.product_label')
+	// addtoCart3El = By.css('.inventory_list .inventory_item:nth-child(3) .btn_inventory')
 	addtoCartEl = By.className('btn_primary btn_inventory')
 	cartEl = By.className('shopping_cart_link fa-layers fa-fw')
 

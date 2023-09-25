@@ -12,6 +12,7 @@ class CheckOutOverviewPage extends Page {
     subTotalEl = By.className('summary_subtotal_label')
     totalEl = By.className('summary_total_label')
     finishEl = By.className('btn_action cart_button')
+	finishMessageEl = By.className('complete-text')
 
 	async openPage() {
 		await this.openUrl('/checkout-step-two.html')
@@ -35,6 +36,10 @@ class CheckOutOverviewPage extends Page {
 
     async getProductName () {
 		return await this.driver.findElement(this.productNameEl).getText()
+	}
+
+	async getMessage () {
+		return await this.driver.findElement(this.finishMessageEl).getText()
 	}
 
 }

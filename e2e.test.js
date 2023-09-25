@@ -42,6 +42,8 @@ describe('End to end test', function () {
         expect(total).to.include('32.39')
 
         await checkOutOverviewPage.finishCheckOut()
+        const mess = await checkOutOverviewPage.getMessage()
+        expect(mess).to.include('Your order has been dispatched, and will arrive just as fast as the pony can get there!')
 
         await new Promise(done => setTimeout(done, 2000))
 
