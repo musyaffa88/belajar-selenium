@@ -1,6 +1,6 @@
 const { WebDriver } = require('selenium-webdriver')
 
-class PageComparison {
+class VisualPage {
 	constructor (driver) {
 		/** @type {WebDriver} */
 		this.driver = driver
@@ -11,4 +11,4 @@ class PageComparison {
 	}
 }
 
-module.exports = PageComparison
+module.exports = VisualPage

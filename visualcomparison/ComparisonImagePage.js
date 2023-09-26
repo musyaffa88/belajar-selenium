@@ -8,7 +8,7 @@ chai.use(chaiImage)
 const { expect } = chai
 const VisualPage = require('./VisualPage')
 
-class ComparisonPage extends VisualPage {
+class ComparisonImagePage extends VisualPage {
 	constructor (driver) {
 		super(driver)
 	}
@@ -43,5 +43,5 @@ class ComparisonPage extends VisualPage {
 
 }
 
-module.exports = ComparisonPage
+module.exports = ComparisonImagePage
 
